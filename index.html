@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#012641">
+  <meta name="description" content="Alias Game – týmová slovní hra">
+  <title>Alias Game</title>
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================================================
+     SCREEN: HOME
+================================================ -->
+<section id="screenHome" class="screen">
+  <div style="flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:32px">
+    <div>
+      <div style="font-size:5rem; margin-bottom:8px">🎭</div>
+      <h1 style="color:var(--accent)">ALIAS</h1>
+      <p class="text-muted" style="font-size:1.1rem; margin-top:8px">Párty hra ve stylu Activity.<br>Hádej a bav se s celou partou.</p>
+    </div>
+    <div class="flex flex-col gap-16" style="width:100%; max-width:360px">
+      <button class="btn btn-primary btn-lg" id="btnNewGame">🎮 Nová hra</button>
+      <button class="btn btn-secondary btn-lg" id="btnRules">📖 Jak se hraje?</button>
+      <button class="btn btn-secondary btn-lg" id="btnCards">🃏 Kartičky</button>
+    </div>
+    <p class="text-muted" style="font-size:0.8rem">v1.2.12</p>
+    <div class="theme-picker" id="themePicker">
+      <button class="theme-dot" data-theme=""         style="background:#ee005a"                                           title="Raspberry Red"></button>
+      <button class="theme-dot" data-theme="celadon"  style="background:#a8d3a8"                                           title="Celadon"></button>
+      <button class="theme-dot" data-theme="cherry"   style="background:#f9a8bb"                                           title="Cherry Blossom"></button>
+      <button class="theme-dot" data-theme="icy"      style="background:#a4d8ff"                                           title="Icy Blue"></button>
+      <button class="theme-dot" data-theme="lime"     style="background:#ddea78"                                           title="Lime Cream"></button>
+      <button class="theme-dot" data-theme="shadow"   style="background:#d4aa7d"                                           title="Shadow Grey"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     SCREEN: RULES
+================================================ -->
+<section id="screenRules" class="screen">
+  <div class="max-w-800" style="width:100%">
+    <div class="flex items-center gap-16 mb-24">
+      <button class="btn btn-secondary btn-sm" id="btnRulesBack">← Zpět</button>
+      <h2>📖 Jak se hraje?</h2>
+    </div>
+
+    <div class="card mb-16 rules-card">
+      <div class="rules-card-header"><span class="rules-icon">🎯</span><h3>Základní princip</h3></div>
+      <p>Hráči jsou rozděleni do týmů. Týmy se střídají v tazích – v každém tahu jeden tým <strong>prezentuje</strong> pojem a ostatní členové týmu <strong>hádají</strong>. Za každý uhodnutý pojem tým získá body. Vítěz je tým, který jako první dosáhne cílového počtu bodů.</p>
+    </div>
+
+    <div class="card mb-16 rules-card">
+      <div class="rules-card-header"><span class="rules-icon">▶️</span><h3>Průběh tahu</h3></div>
+      <ol class="rules-list">
+        <li><strong>Příprava (30 s)</strong> – prezentující si přečte kartičku a může zobrazit nápovědu. Ostatní hráči nevidí obrazovku.</li>
+        <li><strong>Prezentace (60 s)</strong> – hráč pomocí zvoleného způsobu přibližuje pojem svému týmu, dokud neuplyne čas.</li>
+        <li><strong>Výsledek</strong> – potvrdí se, zda tým uhodl správně, a přidají se body.</li>
+      </ol>
+    </div>
+
+    <div class="card mb-16 rules-card">
+      <div class="rules-card-header"><span class="rules-icon">🎭</span><h3>Typy prezentace</h3></div>
+      <div class="rules-types">
+        <div class="rules-type-item">
+          <div class="rules-type-icon">🗣️</div>
+          <div><strong>Popis</strong><br><span class="text-muted">Slovně popisuješ pojem – nesmíš říct samo slovo ani jeho odvozeniny.</span></div>
+        </div>
+        <div class="rules-type-item">
+          <div class="rules-type-icon">✏️</div>
+          <div><strong>Kresba</strong><br><span class="text-muted">Kreslíš na papír nebo do vzduchu – nesmíš mluvit ani naznačovat písmena.</span></div>
+        </div>
+        <div class="rules-type-item">
+          <div class="rules-type-icon">🤸</div>
+          <div><strong>Pantomima</strong><br><span class="text-muted">Předvádíš pohybem a mimikou – nesmíš vydávat žádné zvuky.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-16 rules-card">
+      <div class="rules-card-header"><span class="rules-icon">🏆</span><h3>Bodování</h3></div>
+      <p>Každá kartička má bodovou hodnotu podle obtížnosti:</p>
+      <div class="rules-types" style="margin-top:12px">
+        <div class="rules-type-item"><div class="rules-type-icon" style="font-size:1.1rem">⭐</div><div><strong>Lehká</strong> = 1 bod</div></div>
+        <div class="rules-type-item"><div class="rules-type-icon" style="font-size:1.1rem">⭐⭐</div><div><strong>Střední</strong> = 2 body</div></div>
+        <div class="rules-type-item"><div class="rules-type-icon" style="font-size:1.1rem">⭐⭐⭐</div><div><strong>Těžká</strong> = 3 body</div></div>
+      </div>
+      <p class="mt-8">Body dostává prezentující tým za každou správně uhodnutou kartičku. Hra končí, jakmile tým dosáhne nastaveného cíle.</p>
+    </div>
+
+    <div class="card mb-16 rules-card">
+      <div class="rules-card-header"><span class="rules-icon">🌍</span><h3>Veřejná kola</h3></div>
+      <p>Každé <strong>5. kolo</strong> je označeno bannerem <em style="color:var(--accent2)">VEŘEJNÉ KOLO</em> – v takovém tahu smí hádat <strong>všechny týmy najednou</strong>.</p>
+      <ul class="rules-list mt-8">
+        <li>Uhodne jiný tým → body se <strong>rozdělí 50 / 50</strong> mezi prezentující a hádající tým.</li>
+        <li>Uhodne prezentující tým sám → dostane <strong>plný počet bodů</strong>.</li>
+        <li>Nikdo neuhodne → body nedostane nikdo.</li>
+      </ul>
+    </div>
+
+    <div class="card mb-16 rules-card">
+      <div class="rules-card-header"><span class="rules-icon">🃏</span><h3>Joker – přeskočení kartičky</h3></div>
+      <p>Tlačítko <strong>🃏 Joker</strong> v horní liště umožní aktuální kartičku přeskočit <strong>bez penalizace</strong> – tah skončí a tým nezíská ani neztratí body.</p>
+      <ul class="rules-list mt-8">
+        <li>Použít lze pouze po vytažení kartičky (během přípravy nebo odpočtu).</li>
+        <li>Po použití se zobrazí <em>„🃏 Za X"</em> – joker čeká na dobití.</li>
+        <li>Dobije se po <strong>7 odehraných kolech</strong> celé hry.</li>
+      </ul>
+    </div>
+
+    <div class="card mb-32 rules-card">
+      <div class="rules-card-header"><span class="rules-icon">💡</span><h3>Nápověda</h3></div>
+      <p>Během přípravné fáze může prezentující zobrazit krátkou nápovědu k pojmu – pomůže pochopit, co se má předvádět. Ostatní hráči ji nevidí.</p>
+      <ul class="rules-list mt-8">
+        <li>Každý tým může nápovědu použít celkem <strong>5×</strong> za celou hru.</li>
+        <li>Počet zbývajících nápověd je vždy vidět na tlačítku <em>💡 Nápověda (X zbývá)</em>.</li>
+      </ul>
+    </div>
+
+    <button class="btn btn-primary btn-lg w-full" id="btnRulesPlay">🎮 Jdeme hrát!</button>
+  </div>
+</section>
+
+<!-- ================================================
+     SCREEN: SETUP
+================================================ -->
+<section id="screenSetup" class="screen">
+  <div class="max-w-800" style="width:100%">
+    <div class="flex items-center gap-16 mb-24">
+      <button class="btn btn-secondary btn-sm" id="btnSetupBack">← Zpět</button>
+      <h2>Nastavení hry</h2>
+    </div>
+
+    <!-- Týmy -->
+    <div class="card mb-24">
+      <div class="flex justify-between items-center mb-16">
+        <h3>👥 Týmy</h3>
+        <button class="btn btn-secondary btn-sm" id="btnAddTeam">+ Přidat tým</button>
+      </div>
+      <div id="teamsList" class="flex flex-col gap-12"></div>
+    </div>
+
+    <!-- Skupiny karet -->
+    <div class="card mb-24">
+      <div class="flex justify-between items-center mb-16">
+        <h3>🃏 Skupiny karet</h3>
+        <button class="btn btn-secondary btn-sm" id="btnToggleAllGroups">Zrušit vše</button>
+      </div>
+      <div id="groupCheckboxes" class="flex gap-16" style="flex-wrap:wrap"></div>
+    </div>
+
+    <!-- Typy úkolů -->
+    <div class="card mb-24">
+      <h3 class="mb-16">🎭 Typy úkolů</h3>
+      <div id="categoryCheckboxes" class="flex gap-16" style="flex-wrap:wrap">
+        <label class="toggle">
+          <input type="checkbox" name="category" value="describe" checked>
+          <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          <span>🗣️ Popis</span>
+        </label>
+        <label class="toggle">
+          <input type="checkbox" name="category" value="draw" checked>
+          <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          <span>✏️ Kresba</span>
+        </label>
+        <label class="toggle">
+          <input type="checkbox" name="category" value="mime" checked>
+          <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          <span>🤸 Pantomima</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Cíl -->
+    <div class="card mb-32">
+      <h3 class="mb-16">🏆 Cíl hry</h3>
+      <div class="form-group" style="max-width:220px">
+        <label class="form-label">Počet bodů pro vítězství</label>
+        <input class="form-input" id="winScore" type="number" value="30" min="5" max="200">
+      </div>
+    </div>
+
+    <button class="btn btn-primary btn-lg w-full" id="btnStartGame">🚀 Spustit hru!</button>
+  </div>
+</section>
+
+<!-- ================================================
+     SCREEN: GAME
+================================================ -->
+<section id="screenGame" class="screen">
+  <!-- Header bar -->
+  <div class="flex justify-between items-center mb-16" style="gap:8px">
+    <div class="flex gap-8">
+      <button class="btn btn-secondary btn-sm" id="btnPauseGame">⏸ Pauza</button>
+      <button class="btn btn-secondary btn-sm" id="btnJoker" disabled>🃏 Joker</button>
+      <button class="btn btn-danger btn-sm"    id="btnEndGame">✕ Konec</button>
+    </div>
+    <div style="font-family:var(--font-display); font-size:1.2rem; letter-spacing:2px; color:var(--text-muted)">ALIAS</div>
+  </div>
+
+  <!-- Scoreboard -->
+  <div id="scoreboard" class="scoreboard mb-24"></div>
+
+  <!-- Turn area (dynamically filled) -->
+  <div id="turnArea" style="flex:1; display:flex; flex-direction:column; justify-content:center"></div>
+</section>
+
+<!-- ================================================
+     SCREEN: WINNER
+================================================ -->
+<section id="screenWinner" class="screen" style="align-items:center; justify-content:center; text-align:center">
+  <canvas id="confettiCanvas" class="winner-confetti"></canvas>
+  <div id="winnerContent" class="max-w-600"></div>
+</section>
+
+<!-- ================================================
+     SCREEN: CARDS EDITOR
+================================================ -->
+<section id="screenCards" class="screen">
+  <div style="width:100%; max-width:1000px; margin:0 auto">
+    <div class="flex justify-between items-center mb-24" style="flex-wrap:wrap; gap:12px">
+      <div class="flex items-center gap-16">
+        <button class="btn btn-secondary btn-sm" id="btnCardsBack">← Zpět</button>
+        <h2>🃏 Kartičky</h2>
+      </div>
+      <div class="flex gap-8" style="flex-wrap:wrap">
+        <button class="btn btn-secondary btn-sm" id="btnManageGroups">📁 Skupiny</button>
+        <button class="btn btn-secondary btn-sm" id="btnImportCards">📥 Import</button>
+        <button class="btn btn-secondary btn-sm" id="btnExportCards">📤 Export</button>
+        <button class="btn btn-primary btn-sm"   id="btnNewCard">+ Nová kartička</button>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="card mb-16" style="padding:16px">
+      <div class="flex gap-12" style="flex-wrap:wrap; align-items:center">
+        <input class="form-input" id="searchCards" placeholder="🔍 Hledat..." style="max-width:220px">
+        <select class="form-select" id="filterGroup" style="max-width:200px">
+          <option value="">Všechny skupiny</option>
+        </select>
+        <select class="form-select" id="filterCategory" style="max-width:180px">
+          <option value="">Všechny typy</option>
+          <option value="describe">🗣️ Popis</option>
+          <option value="draw">✏️ Kresba</option>
+          <option value="mime">🤸 Pantomima</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Table (desktop) -->
+    <div class="card overflow-auto cards-desktop-table">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Výraz</th>
+            <th>Nápověda</th>
+            <th>Typ</th>
+            <th>Skupina</th>
+            <th>Obtížnost</th>
+            <th>Akce</th>
+          </tr>
+        </thead>
+        <tbody id="cardsTableBody"></tbody>
+      </table>
+    </div>
+
+    <!-- List (mobile) -->
+    <div id="cardsMobileList" class="cards-mobile-list"></div>
+  </div>
+</section>
+
+<!-- ================================================
+     MODAL: Card Editor
+================================================ -->
+<div class="modal-overlay" id="modalCard">
+  <div class="modal">
+    <h3 class="modal-title" id="modalCardTitle">Nová kartička</h3>
+    <form id="cardEditorForm" onsubmit="return false">
+      <div class="form-group">
+        <label class="form-label">Výraz *</label>
+        <input class="form-input" id="cardTerm" placeholder="Co se má hádat?" required>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Nápověda / vysvětlení</label>
+        <textarea class="form-textarea" id="cardHint" placeholder="Pomůže hráči lépe pochopit výraz..."></textarea>
+      </div>
+      <div class="grid-2">
+        <div class="form-group">
+          <label class="form-label">Typ úkolu *</label>
+          <select class="form-select" id="cardCategory">
+            <option value="describe">🗣️ Popis</option>
+            <option value="draw">✏️ Kresba</option>
+            <option value="mime">🤸 Pantomima</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Skupina *</label>
+          <input class="form-input" id="cardGroup" list="groupSuggestions" placeholder="IT, zeměpis, dětské...">
+          <datalist id="groupSuggestions"></datalist>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="form-group">
+          <label class="form-label">Obtížnost</label>
+          <select class="form-select" id="cardDifficulty">
+            <option value="1">⭐ Lehká</option>
+            <option value="2" selected>⭐⭐ Střední</option>
+            <option value="3">⭐⭐⭐ Těžká</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Bodová hodnota</label>
+          <input class="form-input" id="cardPoints" type="number" value="1" min="1" max="10">
+        </div>
+      </div>
+      <div class="flex gap-12 mt-16">
+        <button class="btn btn-primary" id="btnSaveCard">💾 Uložit</button>
+        <button class="btn btn-secondary" id="btnCancelCard">Zrušit</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- ================================================
+     MODAL: Card Detail (mobile)
+================================================ -->
+<div class="modal-overlay" id="cardDetailModal">
+  <div class="modal">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:16px">
+      <div style="display:flex; align-items:center; gap:12px">
+        <span id="cdIcon" style="font-size:2rem; line-height:1"></span>
+        <h3 id="cdTerm" style="margin:0; font-size:1.4rem"></h3>
+      </div>
+      <button class="btn btn-secondary btn-sm" id="cdClose">✕</button>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:10px; font-size:0.95rem; color:var(--text-muted)">
+      <div><span style="color:var(--text); font-weight:600">Typ:</span> <span id="cdCategory"></span></div>
+      <div><span style="color:var(--text); font-weight:600">Skupina:</span> <span id="cdGroup"></span></div>
+      <div><span style="color:var(--text); font-weight:600">Obtížnost:</span> <span id="cdDifficulty"></span></div>
+      <div id="cdHintRow"><span style="color:var(--text); font-weight:600">Nápověda:</span><br>
+        <span id="cdHint" style="color:var(--accent2); font-style:italic; margin-top:4px; display:block"></span>
+      </div>
+    </div>
+    <div class="flex gap-12 mt-20">
+      <button class="btn btn-primary" id="cdEditBtn">✏️ Upravit</button>
+      <button class="btn btn-danger"  id="cdDeleteBtn">🗑️ Smazat</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================================================
+     MODAL: Groups Manager
+================================================ -->
+<div class="modal-overlay" id="modalGroups">
+  <div class="modal" style="max-width:520px; width:100%">
+    <h3 class="modal-title">📁 Správa skupin</h3>
+    <div id="newGroupForm" class="mb-16" style="display:none">
+      <div class="flex gap-8">
+        <input class="form-input" id="newGroupInput" placeholder="Název nové skupiny" style="flex:1">
+        <button class="btn btn-primary btn-sm" id="btnCreateGroupConfirm">Vytvořit</button>
+        <button class="btn btn-secondary btn-sm" id="btnCancelNewGroup">✕</button>
+      </div>
+    </div>
+    <div id="groupsList" style="max-height:360px; overflow-y:auto; margin-bottom:16px"></div>
+    <div class="flex gap-12">
+      <button class="btn btn-primary btn-sm" id="btnNewGroup">+ Nová skupina</button>
+      <button class="btn btn-secondary" id="btnCloseGroups">Zavřít</button>
+    </div>
+  </div>
+</div>
+
+<!-- ================================================
+     MODAL: Delete Group Confirm
+================================================ -->
+<div class="modal-overlay" id="modalDeleteGroup">
+  <div class="modal" style="max-width:440px; width:100%">
+    <h3 class="modal-title" style="color:var(--danger)">⚠️ Smazat skupinu</h3>
+    <p>Skupina <strong id="deleteGroupNameDisplay"></strong> obsahuje <strong id="deleteGroupCountDisplay"></strong> kartiček. Tato akce je nevratná.</p>
+    <p class="mt-12">Pro potvrzení zadej název skupiny:</p>
+    <input class="form-input mt-8" id="deleteGroupConfirmInput" placeholder="">
+    <div class="flex gap-12 mt-16">
+      <button class="btn btn-danger" id="btnConfirmDeleteGroup" disabled>🗑️ Smazat vše</button>
+      <button class="btn btn-secondary" id="btnCancelDeleteGroup">Zpět</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast container -->
+<div id="toastContainer" class="toast-container"></div>
+
+<script type="module" src="js/main.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js');
+  }
+</script>
+</body>
+</html>
