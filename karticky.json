@@ -1,0 +1,1653 @@
+{
+  "version": "1.2.6",
+  "cards": [
+    {
+      "term": "Zmrzlina",
+      "hint": "Studená sladká pochoutka",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Kočka",
+      "hint": "Domácí mazlíček co mňouká a přede",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Pes",
+      "hint": "Věrný čtyřnohý přítel, štěká a vrtí ocasem",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Dinosaurus",
+      "hint": "Velký vyhynulý plaz z pravěku",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Pohádka",
+      "hint": "Příběh o princeznách, dracích a šťastném konci",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Hrad",
+      "hint": "Velká kamenná pevnost středověkých rytířů",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Piráti",
+      "hint": "Mořští loupežníci, černá vlajka s lebkou",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Lev",
+      "hint": "Největší africká kočka se zlatou hřívou",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Čarodějnice",
+      "hint": "Pohádková postava na koštěti s černým kloboukem",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Papoušek",
+      "hint": "Barevný pták co umí opakovat slova",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Cirkus",
+      "hint": "Podívaná s klauni, akrobaty a zvířaty pod kulatým stanem",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Ponorka",
+      "hint": "Loď, která pluje pod vodou",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Škola",
+      "hint": "Místo, kam děti chodí každý den učit se",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Superhrdina",
+      "hint": "Člověk se zvláštními schopnostmi, zachraňuje svět",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Království",
+      "hint": "Země, kde vládne král nebo královna",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Čokoláda",
+      "hint": "Sladká hnědá tyčinka, děti ji milují",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Vesmír",
+      "hint": "Tam, kde jsou hvězdy, planety a rakety",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Pirát",
+      "hint": "Loupežník na moři, hledá poklad",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Kouzelnická hůlka",
+      "hint": "Kouzelník ji mává a kouzlí",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Trpaslíci",
+      "hint": "Malí lidé z pohádek, žijí v lese nebo v horách",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Léto",
+      "hint": "Nejteplejší roční období, děti mají prázdniny",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Narozeniny",
+      "hint": "Den, kdy slavíš, že jsi přišel na svět, dostáváš dárky",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Žabák",
+      "hint": "Zelený skákavý tvor, žije u vody, skřípe",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Horská dráha",
+      "hint": "Atrakce v zábavním parku, rychle jezdí nahoru a dolů",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Mořská panna",
+      "hint": "Bytost napůl dívka, napůl ryba z pohádek",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Strašidlo",
+      "hint": "Bílá průhledná bytost, která straší v domech",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Medvěd",
+      "hint": "Velké chlupaté zvíře, v zimě spí",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Klouzání na ledu",
+      "hint": "Pohyb po zamrzlé vodě bez bruslí",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Čištění zubů",
+      "hint": "Ranní a večerní hygiena úst",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Lezení po stromě",
+      "hint": "Šplhání nahoru po kmeni a větvích",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Pes čichající ke všemu",
+      "hint": "Zvíře, které nosem zkoumá okolí",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Dirigent orchestru",
+      "hint": "Člověk mávající taktovkou před muzikanty",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Tučňák",
+      "hint": "Pták, který neléta a chodí kolébavě",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Kuchař míchající polévku",
+      "hint": "Vaření velkého hrnce jídla",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Strašení jako duch",
+      "hint": "Pohybovat se tiše a nečekaně vylekat někoho",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Astronaut ve vesmíru",
+      "hint": "Pohyb bez gravitace, pomalu se vznášet",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Lev řvoucí a lovící",
+      "hint": "Král zvířat při útoku na kořist",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Had plazící se trávou",
+      "hint": "Pohyb bez nohou po zemi",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Fotbalista střílející gól",
+      "hint": "Sportovec kopající míč do brány",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Malování obrazu štětcem",
+      "hint": "Umělec tvořící na plátně",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Opice skákající po stromech",
+      "hint": "Primát houpající se na větvích",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Žonglér",
+      "hint": "Artist házel a chytá předměty ve vzduchu",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Plavání pod vodou",
+      "hint": "Pohyb v moři nebo bazénu bez nadechnutí",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Zahradník sázející květiny",
+      "hint": "Kopání dírek a zasazování rostlin do země",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Robotický tanec",
+      "hint": "Pohyby jakoby byl člověk stroj",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Pavián ukazující zadek",
+      "hint": "Největší opice předvádějící svou nejbarevnější část",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Létání jako pták",
+      "hint": "Pohybovat rukama jako křídly a vznášet se",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Lední hokej",
+      "hint": "Sport na ledě s hokejkou a pukem",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Šplhání po laně",
+      "hint": "Pohyb rukama nahoru bez použití nohou",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Klokan se svým mládětem",
+      "hint": "Zvíře s vakem na břiše, skáče",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Boxování s imaginárním soupeřem",
+      "hint": "Sportovec trénující údery do vzduchu",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Včela opylující květ",
+      "hint": "Malý hmyz létající z květiny na květinu",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Jízda na koni",
+      "hint": "Poskok nahoru a dolů při cestování na zvířeti",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Surfování na vlně",
+      "hint": "Stát na prkně a balancovat na mořské vlně",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Kouzelník vytahující králíka z klobouku",
+      "hint": "Trik, kdy z prázdného klobouku vyjde zvíře",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Rybář chytající velkou rybu",
+      "hint": "Boj s prutem a navijákem, ryba táhne",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Šéfkuchař přehazující palačinky",
+      "hint": "Vaření tenkého sladkého pokrmu na pánvi přehozením",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Spící medvěd probouzející se z hibernace",
+      "hint": "Pomalu otevírat oči, protahovat se, nechce se vstávat",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Balónek nafukující se a splaskávající",
+      "hint": "Nafouknout se, být kulatý, pak rychle splasknout",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Tanec v dešti",
+      "hint": "Skákat do louží a otevřít ústa k mrakům",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Traktor orající pole",
+      "hint": "Velký zemědělský stroj jedoucí v rovných řadách",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Dopravní zácpa",
+      "hint": "Spousta aut stojí na silnici a nikdo nejede",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Pouštní ostrov",
+      "hint": "Malý ostrov uprostřed moře, kde nikdo nežije",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Záchranář",
+      "hint": "Pomáhá lidem v nebezpečí, jezdí s houkačkou",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Vikingové",
+      "hint": "Odvážní bojovníci ze severu, pluli na drakkarech",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Tajná chodba",
+      "hint": "Skrytý průchod za obrazem nebo poličkou",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Planetárium",
+      "hint": "Budova, kde si na stropě promítají hvězdnou oblohu",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Sněžná bouře",
+      "hint": "Předvést silný vítr a vánici sněhu",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Obří chobotnice útočí",
+      "hint": "Velký podmořský tvor omotává chapadly vše kolem",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Sup kroužící nad kořistí",
+      "hint": "Velký pták pomalu létající v kruzích",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Fotograf na safari",
+      "hint": "Člověk fotící divoká zvířata v Africe",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Kapitán lodi v bouři",
+      "hint": "Řízení plavidla za silného větru a vln",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Tání sněhuláka",
+      "hint": "Pomalu se zmenšovat a klesnat k zemi jako roztávající sníh",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Záchranář dolující lidi z trosek",
+      "hint": "Prohledávání sutin po zemětřesení",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Ninja skákající přes překážky",
+      "hint": "Tajný bojovník z Japonska v tichém pohybu",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Drak spící na pokladu",
+      "hint": "Velká šupinová bytost leží na hromadě zlatých mincí",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Mimozemšťan přistávající na Zemi",
+      "hint": "Bytost z jiné planety vystupující z létajícího talíře",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Gepard pronásledující gazelu",
+      "hint": "Nejrychlejší zvíře světa při lovu",
+      "category": "describe",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Duhový jednorožec",
+      "hint": "Magický kůň s rohem",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Robot",
+      "hint": "Stroj který vypadá jako člověk",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Duha",
+      "hint": "Barevný oblouk po dešti",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Sněhulák",
+      "hint": "Zimní figurka z koulí, mrkev místo nosu",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Sluníčko",
+      "hint": "Žlutý kruh s paprsky na obloze",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Domeček",
+      "hint": "Dům s okny, dveřmi a trojúhelníkovou střechou",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Housenka",
+      "hint": "Dlouhý barevný tvor z kuliček, změní se v motýla",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Ryba",
+      "hint": "Vodní živočich s ploutvemi a šupinami",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Klokan",
+      "hint": "Australské zvíře s vačkem, skáče po zadních",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Krokodýl",
+      "hint": "Velký zelený plaz se zuby, žije v řekách Afriky",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Hora s vrcholkem",
+      "hint": "Velký kopec s ostrým vrcholem, často zasněžený",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Raketa letící do vesmíru",
+      "hint": "Dopravní prostředek mířící ke hvězdám",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Drak chrlící oheň",
+      "hint": "Velký okřídlený had z pohádek, fouká plameny",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Pirátská loď",
+      "hint": "Plachetnice s černou vlajkou a lebkou",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Pohádkový hrad",
+      "hint": "Kamenná stavba s věžemi a padacím mostem",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Mořský koník",
+      "hint": "Malá zvláštní rybka, která plave vzpřímeně",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Chobotnice",
+      "hint": "Podmořský tvor s osmi chapadly",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Strom s domečkem",
+      "hint": "Domeček postavený vysoko v koruně stromu",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Žirafa jedoucí na kole",
+      "hint": "Velmi vysoké zvíře na dopravním prostředku",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Ještěrka",
+      "hint": "Malý zelený plaz, který se hřeje na slunci",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Létající koberec",
+      "hint": "Pohádkový koberec, na kterém se létá vzduchem",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Slunečnice",
+      "hint": "Vysoká žlutá květina, která se otáčí za sluncem",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Sopka",
+      "hint": "Hora, ze které teče láva a vylétají kameny",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Šašek",
+      "hint": "Zábavná postava z cirkusu s červeným nosem",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Balónkový pes",
+      "hint": "Zvíře vyrobené zkroucením nafukovacích balónků",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Ryby v akváriu",
+      "hint": "Barevní vodní tvorové v prosklené nádrži",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Podmořský svět",
+      "hint": "Co se skrývá hluboko pod mořskou hladinou",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Roboti v továrně",
+      "hint": "Stroje pracující na výrobní lince",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Vesmírná stanice",
+      "hint": "Základna astronautů ve vesmíru",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Kouzelný les v noci",
+      "hint": "Temný les plný svítících hub a skřítků",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Čarodějův hrad v oblacích",
+      "hint": "Kouzelná pevnost vznášející se vysoko nad zemí",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Robo-kuchař",
+      "hint": "Stroj s hrnci a vařečkou, který připravuje jídlo",
+      "category": "draw",
+      "group_name": "dětské",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Fotbal",
+      "hint": "Nejpopulárnější sport na světě",
+      "category": "mime",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Spánek",
+      "hint": "Co děláš každou noc v posteli",
+      "category": "mime",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Slon",
+      "hint": "Největší suchozemský živočich, má chobot",
+      "category": "mime",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Plavání",
+      "hint": "Pohyb ve vodě koordinací rukou a nohou",
+      "category": "mime",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Jízda na kole",
+      "hint": "Šlapání pedálů a vyvažování na dvou kolech",
+      "category": "mime",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Bubnování",
+      "hint": "Bití do imaginárních bicích paličkami",
+      "category": "mime",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Česání vlasů",
+      "hint": "Tahání kartáče nebo hřebenu přes vlasy",
+      "category": "mime",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Karate",
+      "hint": "Japonské bojové umění, kopy a seky dlaní",
+      "category": "mime",
+      "group_name": "dětské",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Databáze",
+      "hint": "Organizované úložiště dat",
+      "category": "describe",
+      "group_name": "IT",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Virus",
+      "hint": "Škodlivý program který se šíří sám",
+      "category": "describe",
+      "group_name": "IT",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Bug",
+      "hint": "Chyba v programu – pojmenovaná po skutečném hmyzu",
+      "category": "describe",
+      "group_name": "IT",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Algoritmus",
+      "hint": "Sada instrukcí pro řešení problému – jako recept v kuchyni",
+      "category": "describe",
+      "group_name": "IT",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Firewall",
+      "hint": "Ochranná zeď mezi sítěmi – jako hlídač u dveří",
+      "category": "describe",
+      "group_name": "IT",
+      "difficulty": 2,
+      "points": 2
+    },
+    {
+      "term": "Cloud computing",
+      "hint": "Výpočetní výkon dostupný přes internet",
+      "category": "describe",
+      "group_name": "IT",
+      "difficulty": 2,
+      "points": 2
+    },
+    {
+      "term": "Git",
+      "hint": "Systém pro správu verzí kódu",
+      "category": "describe",
+      "group_name": "IT",
+      "difficulty": 2,
+      "points": 2
+    },
+    {
+      "term": "Blockchain",
+      "hint": "Řetěz propojených bloků dat, decentralizovaný",
+      "category": "describe",
+      "group_name": "IT",
+      "difficulty": 3,
+      "points": 3
+    },
+    {
+      "term": "API",
+      "hint": "Rozhraní pro komunikaci dvou aplikací",
+      "category": "describe",
+      "group_name": "IT",
+      "difficulty": 3,
+      "points": 3
+    },
+    {
+      "term": "Python",
+      "hint": "Programovací jazyk pojmenovaný po hadovi",
+      "category": "mime",
+      "group_name": "IT",
+      "difficulty": 2,
+      "points": 2
+    },
+    {
+      "term": "Přátelství",
+      "hint": "Silný citový vztah mezi lidmi bez rodinné příbuznosti",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Dovolená",
+      "hint": "Placený volný čas trávený mimo domov, obvykle v létě",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Hudba",
+      "hint": "Zvuky organizované do melodie a rytmu",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Tanec",
+      "hint": "Pohyb těla v rytmu hudby",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Narozeniny",
+      "hint": "Výročí dne narození, dort a dárky",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Selfie",
+      "hint": "Autoportrét pořízený vlastním telefonem",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Táborák",
+      "hint": "Oheň v přírodě, kolem kterého se sedí, zpívá a opékají buřty",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Trampolína",
+      "hint": "Pružná plocha napnutá na rámě, na které se skáče vysoko",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Satelitní navigace",
+      "hint": "Přístroj v autě, který ti pomocí satelitů říká, kudy jet",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Být v pohodě / relax",
+      "hint": "Naprostý klid a pohoda, bez stresu",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Opilý člověk jdoucí domů",
+      "hint": "Vratkavá chůze po večírku",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Jóga v parku",
+      "hint": "Klidné protahování v přírodě s dýcháním a rovnováhou",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Záchvat smíchu, který nejde zastavit",
+      "hint": "Nekontrolovatelný chechtot, slzy v očích, bolí bříško",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Modelka na přehlídkovém molu",
+      "hint": "Sebejistá chůze ve vysokých podpatcích, otočka na konci",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Karanténa",
+      "hint": "Izolace kvůli nemoci nebo epidemii",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 2
+    },
+    {
+      "term": "Inflace",
+      "hint": "Růst cen zboží a pokles hodnoty peněz",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 2
+    },
+    {
+      "term": "Déjà vu",
+      "hint": "Pocit že jsi tuto situaci již zažil",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 2
+    },
+    {
+      "term": "Karma",
+      "hint": "Co zaseješ, to sklidíš – hinduistický koncept",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 2
+    },
+    {
+      "term": "Prokrastinace",
+      "hint": "Neustálé odkládání důležitých úkolů na potom",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 2
+    },
+    {
+      "term": "Nostalgie",
+      "hint": "Melancholická touha po minulých časech nebo místech",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 2
+    },
+    {
+      "term": "Stereotyp",
+      "hint": "Zjednodušená a zobecněná představa o skupině lidí",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 2
+    },
+    {
+      "term": "Akupunktura",
+      "hint": "Tradiční čínská léčba pomocí jehliček zapíchnutých do těla",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Černá díra",
+      "hint": "Místo ve vesmíru s tak silnou gravitací, že pohltí i světlo",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Hipster",
+      "hint": "Člověk, který záměrně vyhledává věci mimo hlavní proud",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Horoskop",
+      "hint": "Předpověď osudu podle postavení hvězd a znamení zvěrokruhu",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Midlife crisis",
+      "hint": "Krize středního věku, kdy si člověk kupuje motorku a mění život",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Veganství",
+      "hint": "Životní styl, kde se nejí ani nepoužívá nic živočišného původu",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Networking",
+      "hint": "Budování profesionálních kontaktů na akcích s vizitkami a small talkem",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Zákulisí divadla",
+      "hint": "Prostor za jevištěm, kam diváci nemohou, ale herci ano",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Pohovor o práci",
+      "hint": "Nervózní setkání s potenciálním zaměstnavatelem",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Zamilovanost na první pohled",
+      "hint": "Okamžik, kdy uvidíš někoho a srdce se zastaví",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Vyjednávání o slevě na tržišti",
+      "hint": "Smlouvání s prodavačem, každý chce jinou cenu",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Šéf dávající motivační proslov",
+      "hint": "Vůdce skupiny plamenně povzbuzující svůj tým",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Turisté ztracení bez mapy",
+      "hint": "Dvojice otáčí plán ze všech stran a neví kudy jít",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Detektiv stopující podezřelého",
+      "hint": "Tajně sledovat někoho, skrývat se za novinami a rohy",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Člověk čekající na zpožděný vlak",
+      "hint": "Netrpělivé přecházení, koukání na hodinky, podívat se do kolejí",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "DJ na párty mixující hudbu",
+      "hint": "Sluchátka na krku, ruce na gramofonu, dav tančí",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Empatie",
+      "hint": "Schopnost vžít se do pocitů druhého",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 3,
+      "points": 3
+    },
+    {
+      "term": "Referendum",
+      "hint": "Přímé hlasování občanů o důležité otázce",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 3,
+      "points": 3
+    },
+    {
+      "term": "Paradox",
+      "hint": "Tvrzení které je zároveň pravdivé i nepravdivé",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 3,
+      "points": 3
+    },
+    {
+      "term": "Charisma",
+      "hint": "Přirozená schopnost okouzlit a strhnout ostatní lidi",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 3,
+      "points": 3
+    },
+    {
+      "term": "Globalizace",
+      "hint": "Ekonomické a kulturní propojení celého světa",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 3,
+      "points": 3
+    },
+    {
+      "term": "Placebo",
+      "hint": "Lék bez účinné látky, přesto někdy funguje díky psychice",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 3,
+      "points": 2
+    },
+    {
+      "term": "Klišé",
+      "hint": "Fráze nebo nápad, který je tak opotřebovaný, že ztratil smysl",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 3,
+      "points": 2
+    },
+    {
+      "term": "Crowdfunding",
+      "hint": "Financování projektu od velkého množství lidí přes internet",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 3,
+      "points": 2
+    },
+    {
+      "term": "Algoritmus",
+      "hint": "Přesný postup kroků, jak vyřešit nějaký problém nebo úkol",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 3,
+      "points": 2
+    },
+    {
+      "term": "Sommelier ochutnávající víno",
+      "hint": "Přivonět, zakroužit sklenicí, malinko usrknout a přemýšlet",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 3,
+      "points": 2
+    },
+    {
+      "term": "Záchranná akce horských záchranářů",
+      "hint": "Spouštění na laně po skalní stěně k raněnému",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 3,
+      "points": 2
+    },
+    {
+      "term": "Podpisová ceremonie smlouvy",
+      "hint": "Formální sezení, podepisování dokumentů, podání ruky",
+      "category": "describe",
+      "group_name": "obecné",
+      "difficulty": 3,
+      "points": 2
+    },
+    {
+      "term": "Dort",
+      "hint": "Slavnostní koláč se svíčkami na oslavě",
+      "category": "draw",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Hodiny",
+      "hint": "Přístroj s ciferníkem a ručičkami ukazující čas",
+      "category": "draw",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Kniha",
+      "hint": "Svazek stránek s textem nebo obrázky",
+      "category": "draw",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Klíč",
+      "hint": "Kovový nástroj na odemykání zámků",
+      "category": "draw",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Nákupní košík",
+      "hint": "Drátěný vozík v supermarketu na zboží",
+      "category": "draw",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Peníze",
+      "hint": "Bankovky nebo mince sloužící jako platidlo",
+      "category": "draw",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Zátiší s ovocem",
+      "hint": "Klasický malířský motiv – mísa s různým ovocem na stole",
+      "category": "draw",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Mapa pokladů",
+      "hint": "Zažloutlý papír s X označujícím skrytý poklad",
+      "category": "draw",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Zeměkoule",
+      "hint": "Kulatá mapa Země s kontinenty a oceány",
+      "category": "draw",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 2
+    },
+    {
+      "term": "Architektonický výkres domu",
+      "hint": "Technický plán budovy pohled ze předu",
+      "category": "draw",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Kávová skvrna na ubrousku",
+      "hint": "Náhodný tvar připomínající cosi po rozlití horkého nápoje",
+      "category": "draw",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Pouliční umělec",
+      "hint": "Člověk tvořící dílo přímo na chodníku nebo zdi",
+      "category": "draw",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Průřez sopkou",
+      "hint": "Řez horou, který ukazuje magma a komín uvnitř",
+      "category": "draw",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Panorama velkoměsta v noci",
+      "hint": "Silueta mrakodrapů se světly odrážejícími se ve vodě",
+      "category": "draw",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Vinný sklep",
+      "hint": "Temná místnost plná sudů a lahví s vínem",
+      "category": "draw",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Labyrint",
+      "hint": "Bludiště s mnoha slepými uličkami a jednou správnou cestou",
+      "category": "draw",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Yoga pozice",
+      "hint": "Cvičební protahovací poloha těla z indické tradice",
+      "category": "draw",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Sklenička vína při svíčce",
+      "hint": "Romantická atmosféra u stolu s rudým nápojem a plamenem",
+      "category": "draw",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 1
+    },
+    {
+      "term": "Dopravní uzel",
+      "hint": "Místo, kde se kříží dálnice, vlak i letiště",
+      "category": "draw",
+      "group_name": "obecné",
+      "difficulty": 3,
+      "points": 2
+    },
+    {
+      "term": "Graf inflace",
+      "hint": "Křivka ukazující, jak rostou ceny v čase",
+      "category": "draw",
+      "group_name": "obecné",
+      "difficulty": 3,
+      "points": 2
+    },
+    {
+      "term": "Schodiště v perspektivě",
+      "hint": "Kroky mizící do dálky, kreslené s úběžníkem",
+      "category": "draw",
+      "group_name": "obecné",
+      "difficulty": 3,
+      "points": 2
+    },
+    {
+      "term": "Karikatura politika",
+      "hint": "Vtipná přehnaná kresba tváře veřejně známé osobnosti",
+      "category": "draw",
+      "group_name": "obecné",
+      "difficulty": 3,
+      "points": 2
+    },
+    {
+      "term": "Řízení auta",
+      "hint": "Otáčení volantem a sešlapávání pedálů",
+      "category": "mime",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Fotografování",
+      "hint": "Zamíření a stisknutí spouště fotoaparátu",
+      "category": "mime",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Čistění zubů",
+      "hint": "Pohyb kartáčkem v ústech ze strany na stranu",
+      "category": "mime",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Vaření",
+      "hint": "Míchání v hrnci, ochutnávání a přidávání koření",
+      "category": "mime",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Telefonování",
+      "hint": "Přikládání imaginárního telefonu k uchu a mluvení",
+      "category": "mime",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Lyžování",
+      "hint": "Sjezd zasněženého svahu na lyžích s holemi",
+      "category": "mime",
+      "group_name": "obecné",
+      "difficulty": 1,
+      "points": 1
+    },
+    {
+      "term": "Sarkasmus",
+      "hint": "Ironie s ostrým jazykem – říkáš opak co myslíš",
+      "category": "mime",
+      "group_name": "obecné",
+      "difficulty": 2,
+      "points": 2
+    }
+  ]
+}
