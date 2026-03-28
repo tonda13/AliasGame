@@ -1,0 +1,44 @@
+services:
+  php:
+    build: ./docker/php
+    container_name: alias_php
+    volumes:
+      - .:/var/www/html
+    environment:
+      DB_HOST: mysql
+      DB_NAME: alias_game
+      DB_USER: alias
+      DB_PASS: alias
+    depends_on:
+      mysql:
+        condition: service_healthy
+    ports:
+      - "8080:80"
+
+  mysql:
+    image: mysql:8.0
+    container_name: alias_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: alias_game
+      MYSQL_USER: alias
+      MYSQL_PASSWORD: alias
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./database.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  adminer:
+    image: adminer:latest
+    container_name: alias_adminer
+    ports:
+      - "8081:8080"
+    depends_on:
+      - mysql
+
+volumes:
+  mysql_data:
