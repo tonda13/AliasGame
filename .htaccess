@@ -1,0 +1,38 @@
+Options -Indexes
+
+# Security headers
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options nosniff
+  Header always set X-Frame-Options SAMEORIGIN
+</IfModule>
+
+# Enable GZIP
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json
+</IfModule>
+
+# Cache static assets
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css               "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+  ExpiresByType image/png              "access plus 1 month"
+  ExpiresByType application/json       "access plus 0 seconds"
+</IfModule>
+
+# SPA routing
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Existující soubory a složky servíruj přímo
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # API volání nechej projít
+  RewriteRule ^api/ - [L]
+
+  # Vše ostatní → index.html (SPA)
+  RewriteRule ^ index.html [L]
+</IfModule>

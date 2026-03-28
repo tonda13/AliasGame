@@ -1,0 +1,15 @@
+# Citlivé soubory
+api/config.php
+adminer.php
+
+# Claude internal
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
