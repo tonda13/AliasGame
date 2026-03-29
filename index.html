@@ -27,7 +27,7 @@
       <button class="btn btn-secondary btn-lg" id="btnRules">📖 Jak se hraje?</button>
       <button class="btn btn-secondary btn-lg" id="btnCards">🃏 Kartičky</button>
     </div>
-    <p class="text-muted" style="font-size:0.8rem">v1.2.16</p>
+    <p class="text-muted" style="font-size:0.8rem">v1.2.17</p>
     <div class="theme-picker" id="themePicker">
       <button class="theme-dot" data-theme=""         style="background:#ee005a"                                           title="Raspberry Red"></button>
       <button class="theme-dot" data-theme="celadon"  style="background:#a8d3a8"                                           title="Celadon"></button>
@@ -337,7 +337,10 @@
     <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:16px">
       <div style="display:flex; align-items:center; gap:12px">
         <span id="cdIcon" style="font-size:2rem; line-height:1"></span>
-        <h3 id="cdTerm" style="margin:0; font-size:1.4rem"></h3>
+        <div>
+          <div id="cdEmoji" style="font-size:2.5rem; line-height:1.1; display:none"></div>
+          <h3 id="cdTerm" style="margin:0; font-size:1.4rem"></h3>
+        </div>
       </div>
       <button class="btn btn-secondary btn-sm" id="cdClose">✕</button>
     </div>

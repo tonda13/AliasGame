@@ -159,6 +159,13 @@ function showCardDetail(card) {
   const modal = document.getElementById('cardDetailModal');
   document.getElementById('cdIcon').textContent     = getCategoryIcon(card.category);
   document.getElementById('cdTerm').textContent     = card.term;
+  const cdEmoji = document.getElementById('cdEmoji');
+  if (card.emoji) {
+    cdEmoji.textContent    = card.emoji;
+    cdEmoji.style.display  = '';
+  } else {
+    cdEmoji.style.display  = 'none';
+  }
   document.getElementById('cdCategory').textContent = getCategoryLabel(card.category);
   document.getElementById('cdGroup').textContent    = card.group_name;
   document.getElementById('cdDifficulty').textContent = getDiffLabel(card.difficulty) + ` · ${card.points} bod${+card.points === 1 ? '' : +card.points < 5 ? 'y' : 'ů'}`;
