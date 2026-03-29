@@ -27,14 +27,17 @@
       <button class="btn btn-secondary btn-lg" id="btnRules">📖 Jak se hraje?</button>
       <button class="btn btn-secondary btn-lg" id="btnCards">🃏 Kartičky</button>
     </div>
-    <p class="text-muted" style="font-size:0.8rem">v1.2.17</p>
-    <div class="theme-picker" id="themePicker">
-      <button class="theme-dot" data-theme=""         style="background:#ee005a"                                           title="Raspberry Red"></button>
-      <button class="theme-dot" data-theme="celadon"  style="background:#a8d3a8"                                           title="Celadon"></button>
-      <button class="theme-dot" data-theme="cherry"   style="background:#f9a8bb"                                           title="Cherry Blossom"></button>
-      <button class="theme-dot" data-theme="icy"      style="background:#a4d8ff"                                           title="Icy Blue"></button>
-      <button class="theme-dot" data-theme="lime"     style="background:#ddea78"                                           title="Lime Cream"></button>
-      <button class="theme-dot" data-theme="shadow"   style="background:#d4aa7d"                                           title="Shadow Grey"></button>
+    <p class="text-muted" style="font-size:0.8rem">v1.2.18</p>
+    <div class="theme-picker-wrap">
+      <div class="theme-picker-label">Téma</div>
+      <div class="theme-picker" id="themePicker">
+        <button class="theme-dot" data-theme=""        style="background:#ee005a" title="Raspberry Red"></button>
+        <button class="theme-dot" data-theme="celadon" style="background:#a8d3a8" title="Celadon"></button>
+        <button class="theme-dot" data-theme="cherry"  style="background:#f9a8bb" title="Cherry Blossom"></button>
+        <button class="theme-dot" data-theme="icy"     style="background:#a4d8ff" title="Icy Blue"></button>
+        <button class="theme-dot" data-theme="lime"    style="background:#ddea78" title="Lime Cream"></button>
+        <button class="theme-dot" data-theme="shadow"  style="background:#d4aa7d" title="Shadow Grey"></button>
+      </div>
     </div>
   </div>
 </section>
@@ -57,7 +60,7 @@
     <div class="card mb-16 rules-card">
       <div class="rules-card-header"><span class="rules-icon">▶️</span><h3>Průběh tahu</h3></div>
       <ol class="rules-list">
-        <li><strong>Příprava (30 s)</strong> – prezentující si přečte kartičku a může zobrazit nápovědu. Ostatní hráči nevidí obrazovku.</li>
+        <li><strong>Příprava</strong> – prezentující si přečte kartičku a může zobrazit nápovědu. Ostatní hráči nevidí obrazovku. Tah začne stiskem tlačítka <em>Začít!</em></li>
         <li><strong>Prezentace (60 s)</strong> – hráč pomocí zvoleného způsobu přibližuje pojem svému týmu, dokud neuplyne čas.</li>
         <li><strong>Výsledek</strong> – potvrdí se, zda tým uhodl správně, a přidají se body.</li>
       </ol>
@@ -94,7 +97,7 @@
 
     <div class="card mb-16 rules-card">
       <div class="rules-card-header"><span class="rules-icon">🌍</span><h3>Veřejná kola</h3></div>
-      <p>Každé <strong>5. kolo</strong> je označeno bannerem <em style="color:var(--accent2)">VEŘEJNÉ KOLO</em> – v takovém tahu smí hádat <strong>všechny týmy najednou</strong>.</p>
+      <p>Občas přijde kolo označené bannerem <em style="color:var(--accent2)">VEŘEJNÉ KOLO</em> – v takovém tahu smí hádat <strong>všechny týmy najednou</strong>. Interval je náhodný, přibližně každých 4–8 kol.</p>
       <ul class="rules-list mt-8">
         <li>Uhodne jiný tým → body se <strong>rozdělí 50 / 50</strong> mezi prezentující a hádající tým.</li>
         <li>Uhodne prezentující tým sám → dostane <strong>plný počet bodů</strong>.</li>
@@ -104,20 +107,21 @@
 
     <div class="card mb-16 rules-card">
       <div class="rules-card-header"><span class="rules-icon">🃏</span><h3>Joker – přeskočení kartičky</h3></div>
-      <p>Tlačítko <strong>🃏 Joker</strong> v horní liště umožní aktuální kartičku přeskočit <strong>bez penalizace</strong> – tah skončí a tým nezíská ani neztratí body.</p>
+      <p>Tlačítko <strong>🃏 Joker</strong> v horní liště umožní aktuální kartičku přeskočit – tah skončí a tým nezíská ani neztratí body.</p>
       <ul class="rules-list mt-8">
-        <li>Použít lze pouze po vytažení kartičky (během přípravy nebo odpočtu).</li>
-        <li>Po použití se zobrazí <em>„🃏 Za X"</em> – joker čeká na dobití.</li>
+        <li>Použít lze pouze po vytažení kartičky.</li>
         <li>Dobije se po <strong>7 odehraných kolech</strong> celé hry.</li>
+        <li>Když joker čeká na dobití, lze kartičku přeskočit za <strong>−1 bod</strong> (tlačítko zobrazí <em>🃏 Joker (−1b)</em>).</li>
       </ul>
     </div>
 
     <div class="card mb-32 rules-card">
       <div class="rules-card-header"><span class="rules-icon">💡</span><h3>Nápověda</h3></div>
-      <p>Během přípravné fáze může prezentující zobrazit krátkou nápovědu k pojmu – pomůže pochopit, co se má předvádět. Ostatní hráči ji nevidí.</p>
+      <p>Prezentující může zobrazit krátkou nápovědu k pojmu – pomůže pochopit, co se má předvádět. Ostatní hráči ji nevidí.</p>
       <ul class="rules-list mt-8">
         <li>Každý tým může nápovědu použít celkem <strong>5×</strong> za celou hru.</li>
         <li>Počet zbývajících nápověd je vždy vidět na tlačítku <em>💡 Nápověda (X zbývá)</em>.</li>
+        <li>Po vyčerpání nápověd lze dokoupit 2 další za <strong>−1 bod</strong> (tlačítko <em>💡 Koupit 2 nápovědy (−1b)</em>).</li>
       </ul>
     </div>
 

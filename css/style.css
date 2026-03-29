@@ -30,45 +30,48 @@
 
 /* ---- THEMES ---- */
 html[data-theme="celadon"] {
-  --bg:         #2a1a17;
-  --surface:    #3d2a26;
-  --surface2:   #4a332e;
-  --border:     #5e3e37;
-  --accent:     #a8d3a8;
-  --accent2:    #7db87d;
-  --text:       #f0ebe8;
-  --text-muted: #9e8a84;
-  --success:    #6bbf6b;
-  --danger:     #e07060;
-  --info:       #7aafc9;
+  --bg:              #2a1a17;
+  --surface:         #3d2a26;
+  --surface2:        #4a332e;
+  --border:          #5e3e37;
+  --accent:          #a8d3a8;
+  --accent2:         #7db87d;
+  --text:            #f0ebe8;
+  --text-muted:      #9e8a84;
+  --success:         #6bbf6b;
+  --danger:          #e07060;
+  --info:            #7aafc9;
+  --btn-accent-text: #1a2e1a;
 }
 
 html[data-theme="cherry"] {
-  --bg:         #0d0a35;
-  --surface:    #1a1265;
-  --surface2:   #221880;
-  --border:     #2e237a;
-  --accent:     #f9a8bb;
-  --accent2:    #f5c8d3;
-  --text:       #f5f0f8;
-  --text-muted: #9090bb;
-  --success:    #7dd4a0;
-  --danger:     #ff6b8a;
-  --info:       #7ab4f0;
+  --bg:              #0d0a35;
+  --surface:         #1a1265;
+  --surface2:        #221880;
+  --border:          #2e237a;
+  --accent:          #f9a8bb;
+  --accent2:         #f5c8d3;
+  --text:            #f5f0f8;
+  --text-muted:      #9090bb;
+  --success:         #7dd4a0;
+  --danger:          #ff6b8a;
+  --info:            #7ab4f0;
+  --btn-accent-text: #3a0a1a;
 }
 
 html[data-theme="icy"] {
-  --bg:         #1a1d1f;
-  --surface:    #252a2d;
-  --surface2:   #2f3538;
-  --border:     #3d4347;
-  --accent:     #a4d8ff;
-  --accent2:    #6ab4e8;
-  --text:       #e8f0f5;
-  --text-muted: #7a9aaa;
-  --success:    #5cd4a0;
-  --danger:     #ff6060;
-  --info:       #60b0ff;
+  --bg:              #1a1d1f;
+  --surface:         #252a2d;
+  --surface2:        #2f3538;
+  --border:          #3d4347;
+  --accent:          #a4d8ff;
+  --accent2:         #6ab4e8;
+  --text:            #e8f0f5;
+  --text-muted:      #7a9aaa;
+  --success:         #5cd4a0;
+  --danger:          #ff6060;
+  --info:            #60b0ff;
+  --btn-accent-text: #0a1a2e;
 }
 
 html[data-theme="lime"] {
@@ -87,29 +90,41 @@ html[data-theme="lime"] {
 }
 
 html[data-theme="shadow"] {
-  --bg:         #141414;
-  --surface:    #1e1e1e;
-  --surface2:   #272727;
-  --border:     #383838;
-  --accent:     #d4aa7d;
-  --accent2:    #e8c89a;
-  --text:       #f0ece8;
-  --text-muted: #888880;
-  --success:    #7acc80;
-  --danger:     #e06050;
-  --info:       #6090c8;
+  --bg:              #141414;
+  --surface:         #1e1e1e;
+  --surface2:        #272727;
+  --border:          #383838;
+  --accent:          #d4aa7d;
+  --accent2:         #e8c89a;
+  --text:            #f0ece8;
+  --text-muted:      #888880;
+  --success:         #7acc80;
+  --danger:          #e06050;
+  --info:            #6090c8;
+  --btn-accent-text: #1a1208;
 }
 
 /* ---- THEME PICKER ---- */
-.theme-picker { display: flex; gap: 8px; justify-content: center; margin-top: 12px; }
+.theme-picker-wrap { margin-top: 12px; text-align: center; }
+.theme-picker-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 6px; }
+.theme-picker { display: flex; gap: 8px; justify-content: center; }
 .theme-dot {
   width: 22px; height: 22px; border-radius: 50%;
   border: 2px solid transparent; cursor: pointer;
   transition: transform 0.15s, border-color 0.15s;
-  padding: 0;
+  padding: 0; position: relative;
 }
 .theme-dot.active          { border-color: var(--text); transform: scale(1.2); }
 .theme-dot:hover:not(.active) { transform: scale(1.1); }
+.theme-dot::after {
+  content: attr(title);
+  position: absolute; bottom: calc(100% + 6px); left: 50%; transform: translateX(-50%);
+  background: var(--surface2); color: var(--text); border: 1px solid var(--border);
+  font-size: 0.72rem; font-family: var(--font-body); white-space: nowrap;
+  padding: 3px 8px; border-radius: 6px; pointer-events: none;
+  opacity: 0; transition: opacity 0.15s;
+}
+.theme-dot:hover::after { opacity: 1; }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
