@@ -109,7 +109,6 @@ Aplikace běží na `http://localhost:8080`. Databáze na portu `3306`. Soubory 
 | `PUBLIC_ROUND_MIN` | 4 | Minimální interval mezi veřejnými koly |
 | `PUBLIC_ROUND_MAX` | 8 | Maximální interval mezi veřejnými koly |
 | `TURN_TIME_SECONDS` | 60 | Délka herního kola |
-| `PREP_TIME_SECONDS` | 30 | Přípravný čas před kolem |
 | `STEAL_POINTS_RATIO` | 0.5 | Podíl bodů pro hádající tým ve veřejném kole |
 
 ---
