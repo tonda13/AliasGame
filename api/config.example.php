@@ -14,7 +14,6 @@ define('APP_VERSION', '1.2.12');
 define('PUBLIC_ROUND_MIN', 4);     // Minimum rounds between public rounds
 define('PUBLIC_ROUND_MAX', 8);     // Maximum rounds between public rounds
 define('TURN_TIME_SECONDS', 60);   // Time to present the card
-define('PREP_TIME_SECONDS', 30);   // Preparation time before turn
 define('STEAL_POINTS_RATIO', 0.5); // Fraction of points for stealing team
 
 // CORS headers for local dev

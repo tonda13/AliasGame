@@ -153,7 +153,6 @@ if ($method === 'POST') {
         jsonResponse([
             'card'      => $card,
             'is_public' => $isPublic,
-            'prep_time' => PREP_TIME_SECONDS,
             'turn_time' => TURN_TIME_SECONDS,
         ]);
     }

@@ -65,73 +65,14 @@ async function drawCard() {
       method: 'POST', body: JSON.stringify({}),
     });
     State.currentCard           = res.card;
-    State.currentCard.prep_time = res.prep_time;
     State.currentCard.turn_time = res.turn_time;
     State.isPublic              = res.is_public;
     State.cardDrawn   = true;
     updateJokerBtn();
-    showPrepPhase();
+    startTurn();
   } catch (e) {
     toast(e.message, 'error');
   }
-}
-
-function showPrepPhase() {
-  const card = State.currentCard;
-  const team = State.teams[State.currentTeamIndex];
-  let   secs = State.currentCard.prep_time || 30;
-
-  const area = document.getElementById('turnArea');
-  area.innerHTML = `
-    ${State.isPublic ? '<div class="public-banner mb-16">🌍 VEŘEJNÉ KOLO – hádají všechny týmy!</div>' : ''}
-    <div class="card-game max-w-600" style="margin:0 auto; border-color:${team.color}">
-      <span class="category-icon">${getCategoryIcon(card.category)}</span>
-      <div style="font-size:0.9rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--text-muted); margin-bottom:8px">
-        ${getCategoryLabel(card.category)} · ${getDiffLabel(card.difficulty)}
-      </div>
-      <h2 style="font-size:clamp(2rem,6vw,3.5rem); color:${team.color}; margin-bottom:12px">${card.term}</h2>
-      ${card.hint ? (() => {
-        const _teamId    = State.teams[State.currentTeamIndex].id;
-        const _hintsLeft = 5 - (State.hintsUsed[_teamId] || 0);
-        const _btnHtml   = _hintsLeft > 0
-          ? `<button id="btnShowHint" class="btn btn-secondary btn-sm">💡 Nápověda (${_hintsLeft} zbývá)</button>`
-          : `<button id="btnBuyHints" class="btn btn-secondary btn-sm">💡 Koupit 2 nápovědy (-1b)</button>`;
-        return `<div class="mt-8 mb-16">${_btnHtml}<p id="hintText" style="display:none; margin-top:10px; color:var(--accent2); font-weight:600">${card.hint}</p></div>`;
-      })() : '<div class="mb-16"></div>'}
-      <div style="font-family:var(--font-display); font-size:5rem; letter-spacing:3px; color:var(--accent)" id="prepCountdown">${secs}</div>
-      <p class="text-muted">sekund na přípravu</p>
-      <button class="btn btn-success btn-lg w-full mt-24" id="btnStartTurn">▶ Začít hned!</button>
-    </div>
-  `;
-
-  document.getElementById('btnStartTurn').addEventListener('click', () => {
-    clearInterval(State.prepInterval);
-    startTurn();
-  });
-
-  const hintBtn = document.getElementById('btnShowHint');
-  if (hintBtn) {
-    hintBtn.addEventListener('click', () => {
-      const teamId = State.teams[State.currentTeamIndex].id;
-      State.hintsUsed[teamId] = (State.hintsUsed[teamId] || 0) + 1;
-      saveGameExtras();
-      document.getElementById('hintText').style.display = 'block';
-      hintBtn.disabled = true;
-      hintBtn.textContent = `💡 Nápověda (${5 - State.hintsUsed[teamId]} zbývá)`;
-    });
-  }
-
-  const buyHintsBtn = document.getElementById('btnBuyHints');
-  if (buyHintsBtn) {
-    buyHintsBtn.addEventListener('click', () => buyHints(State.teams[State.currentTeamIndex].id));
-  }
-
-  State.prepInterval = setInterval(() => {
-    secs--;
-    const el = document.getElementById('prepCountdown');
-    if (el) el.textContent = secs;
-    if (secs <= 0) { clearInterval(State.prepInterval); startTurn(); }
-  }, 1000);
 }
 
 function startTurn(startFrom = null) {
@@ -149,7 +90,15 @@ function startTurn(startFrom = null) {
     <div class="card-game max-w-600" style="margin:0 auto; border-color:${team.color}">
       <span class="category-icon">${getCategoryIcon(card.category)}</span>
       <h2 style="font-size:clamp(2rem,6vw,3.5rem); color:${team.color}; margin-bottom:4px">${card.term}</h2>
-      <div class="text-muted mb-24" style="font-size:0.9rem">${getCategoryLabel(card.category)}</div>
+      <div class="text-muted mb-8" style="font-size:0.9rem">${getCategoryLabel(card.category)} · ${getDiffLabel(card.difficulty)}</div>
+      ${card.hint ? (() => {
+        const _teamId    = State.teams[State.currentTeamIndex].id;
+        const _hintsLeft = 5 - (State.hintsUsed[_teamId] || 0);
+        const _btnHtml   = _hintsLeft > 0
+          ? `<button id="btnShowHint" class="btn btn-secondary btn-sm">💡 Nápověda (${_hintsLeft} zbývá)</button>`
+          : `<button id="btnBuyHints" class="btn btn-secondary btn-sm">💡 Koupit 2 nápovědy (-1b)</button>`;
+        return `<div class="mt-4 mb-16">${_btnHtml}<p id="hintText" style="display:none; margin-top:10px; color:var(--accent2); font-weight:600">${card.hint}</p></div>`;
+      })() : '<div class="mb-16"></div>'}
       <div class="timer-wrap" id="timerWrap">
         <svg class="timer-svg" viewBox="0 0 160 160">
           <circle class="timer-track" cx="80" cy="80" r="70"/>
@@ -166,6 +115,22 @@ function startTurn(startFrom = null) {
     State.timerInterval = null;
     showRoundResult();
   });
+
+  const hintBtn = document.getElementById('btnShowHint');
+  if (hintBtn) {
+    hintBtn.addEventListener('click', () => {
+      const teamId = State.teams[State.currentTeamIndex].id;
+      State.hintsUsed[teamId] = (State.hintsUsed[teamId] || 0) + 1;
+      saveGameExtras();
+      document.getElementById('hintText').style.display = 'block';
+      hintBtn.disabled = true;
+      hintBtn.textContent = `💡 Nápověda (${5 - State.hintsUsed[teamId]} zbývá)`;
+    });
+  }
+  const buyHintsBtn = document.getElementById('btnBuyHints');
+  if (buyHintsBtn) {
+    buyHintsBtn.addEventListener('click', () => buyHints(State.teams[State.currentTeamIndex].id));
+  }
 
   State.timerSeconds  = secs;
   State.timerInterval = setInterval(() => {
