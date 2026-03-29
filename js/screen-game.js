@@ -100,7 +100,7 @@ function showPrepPhase() {
     </div>
   `;
 
-  document.getElementById('btnStartTurn').addEventListener('click', startTurn);
+  document.getElementById('btnStartTurn').addEventListener('click', () => startTurn());
 
   const hintBtn = document.getElementById('btnShowHint');
   if (hintBtn) {
