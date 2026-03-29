@@ -9,6 +9,7 @@ SET time_zone = '+00:00';
 CREATE TABLE IF NOT EXISTS `cards` (
   `id` INT AUTO_INCREMENT PRIMARY KEY,
   `term` VARCHAR(255) NOT NULL,
+  `emoji` VARCHAR(20) NULL COMMENT 'optional emoji for non-readers (kids mode)',
   `hint` TEXT,
   `category` ENUM('describe','draw','mime') NOT NULL DEFAULT 'describe',
   `group_name` VARCHAR(100) NOT NULL DEFAULT 'general',

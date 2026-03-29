@@ -18,7 +18,7 @@ if ($method === 'GET') {
         $params = [];
         if (!empty($_GET['group']))    { $where[] = 'group_name=?'; $params[] = $_GET['group']; }
         if (!empty($_GET['category'])) { $where[] = 'category=?';   $params[] = $_GET['category']; }
-        $sql   = 'SELECT term,hint,category,group_name,difficulty,points FROM cards WHERE ' . implode(' AND ', $where) . ' ORDER BY group_name,category,difficulty';
+        $sql   = 'SELECT term,emoji,hint,category,group_name,difficulty,points FROM cards WHERE ' . implode(' AND ', $where) . ' ORDER BY group_name,category,difficulty';
         $stmt  = $db->prepare($sql);
         $stmt->execute($params);
         $cards = $stmt->fetchAll();
@@ -71,7 +71,7 @@ if ($method === 'POST') {
             $existing[mb_strtolower($row['term'], 'UTF-8') . '|' . $row['group_name']] = true;
         }
 
-        $stmt     = $db->prepare("INSERT INTO cards (term,hint,category,group_name,difficulty,points) VALUES (?,?,?,?,?,?)");
+        $stmt     = $db->prepare("INSERT INTO cards (term,emoji,hint,category,group_name,difficulty,points) VALUES (?,?,?,?,?,?,?)");
         $imported = 0;
         $skipped  = 0;
         $db->beginTransaction();
@@ -86,6 +86,7 @@ if ($method === 'POST') {
                 }
                 $stmt->execute([
                     $term,
+                    trim($c['emoji']        ?? '') ?: null,
                     trim($c['hint']         ?? ''),
                     in_array($c['category'] ?? '', ['describe','draw','mime']) ? $c['category'] : 'describe',
                     $group,
@@ -118,9 +119,10 @@ if ($method === 'POST') {
     foreach ($required as $f) {
         if (empty($body[$f])) jsonError("Field '$f' is required");
     }
-    $stmt = $db->prepare("INSERT INTO cards (term,hint,category,group_name,difficulty,points) VALUES (?,?,?,?,?,?)");
+    $stmt = $db->prepare("INSERT INTO cards (term,emoji,hint,category,group_name,difficulty,points) VALUES (?,?,?,?,?,?,?)");
     $stmt->execute([
         trim($body['term']),
+        trim($body['emoji']        ?? '') ?: null,
         trim($body['hint']         ?? ''),
         in_array($body['category'], ['describe','draw','mime']) ? $body['category'] : 'describe',
         trim($body['group_name']),
@@ -135,9 +137,10 @@ if ($method === 'PUT') {
     if (!$id) jsonError('ID required');
     $db   = getDB();
     $body = getBody();
-    $stmt = $db->prepare("UPDATE cards SET term=?,hint=?,category=?,group_name=?,difficulty=?,points=? WHERE id=?");
+    $stmt = $db->prepare("UPDATE cards SET term=?,emoji=?,hint=?,category=?,group_name=?,difficulty=?,points=? WHERE id=?");
     $stmt->execute([
         trim($body['term']        ?? ''),
+        trim($body['emoji']       ?? '') ?: null,
         trim($body['hint']        ?? ''),
         in_array($body['category'] ?? '', ['describe','draw','mime']) ? $body['category'] : 'describe',
         trim($body['group_name']  ?? 'general'),

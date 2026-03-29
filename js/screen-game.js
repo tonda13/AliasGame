@@ -87,7 +87,11 @@ function showPrepPhase() {
       <div style="font-size:0.9rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--text-muted); margin-bottom:8px">
         ${getCategoryLabel(card.category)} · ${getDiffLabel(card.difficulty)}
       </div>
-      <h2 style="font-size:clamp(2rem,6vw,3.5rem); color:${team.color}; margin-bottom:12px">${card.term}</h2>
+      ${card.emoji
+        ? `<div style="font-size:clamp(4rem,18vw,7rem); line-height:1.1; margin-bottom:8px">${card.emoji}</div>
+           <div style="font-size:1rem; color:var(--text-muted); margin-bottom:12px">${card.term}</div>`
+        : `<h2 style="font-size:clamp(2rem,6vw,3.5rem); color:${team.color}; margin-bottom:12px">${card.term}</h2>`
+      }
       ${card.hint ? (() => {
         const _teamId    = State.teams[State.currentTeamIndex].id;
         const _hintsLeft = 5 - (State.hintsUsed[_teamId] || 0);

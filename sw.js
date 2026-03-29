@@ -1,7 +1,7 @@
 // ==============================================
 // sw.js – Alias Game Service Worker
 // ==============================================
-const CACHE_NAME = 'alias-game-v1.2.15';
+const CACHE_NAME = 'alias-game-v1.2.16';
 const STATIC_ASSETS = [
   '/',
   '/index.html',

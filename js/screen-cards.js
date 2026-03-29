@@ -187,6 +187,7 @@ function openCardEditor(id = null, defaultGroup = null) {
     const c = allCards.find(x => x.id === id);
     if (!c) return;
     document.getElementById('cardTerm').value        = c.term;
+    document.getElementById('cardEmoji').value       = c.emoji || '';
     document.getElementById('cardHint').value        = c.hint || '';
     document.getElementById('cardCategory').value   = c.category;
     document.getElementById('cardGroup').value      = c.group_name;
@@ -308,6 +309,7 @@ async function deleteGroup(name) {
 async function saveCard() {
   const body = {
     term:       document.getElementById('cardTerm').value.trim(),
+    emoji:      document.getElementById('cardEmoji').value.trim(),
     hint:       document.getElementById('cardHint').value.trim(),
     category:   document.getElementById('cardCategory').value,
     group_name: document.getElementById('cardGroup').value.trim(),
